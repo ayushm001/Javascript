@@ -28,6 +28,8 @@
    console.log(undefined >= 0);
    console.log(undefined <= 0);
 
+   //----------AVOID THESE TYPE OF CONVERTION-----------//
+
   // ===         {HERE IT CHECKS THE VALUES STRICTLY}
 
 console.log("2" === 2);
