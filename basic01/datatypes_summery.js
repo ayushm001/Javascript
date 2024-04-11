@@ -1,4 +1,5 @@
-// ------------------------ DATATYPES SUMMARY ----------------------------  
+     //--------------------------------- DATATYPES SUMMARY ---------------------------------------
+
 
 
  //     Primitive datatypes - (value) 7types
@@ -32,8 +33,20 @@ console.log( typeof Big_Numb)
 
 
 
+
 //     Non primitive - (Refernce )  3types
 //     Array, Objects, Functions
 
+const Names = ["Arnab", "Ankit", "Abhya"]
+  // To place  it in array we used data values "[]" -coloumns
 
+let MyObjects= {
+      Name : "Ayushman", 
+      age : 20
+  }
+  // Here MyObjects variable represents the  Objects
 
+const myFunction = function(){
+    console.log("Hello World");
+}
+   
