@@ -1,25 +1,24 @@
-const score = 400
-// console.log(score);
+const score=  100
+console.log(score);
 
-const balance = new Number(100)
-// console.log(balance);
 
-// console.log(balance.toString().length);
-// console.log(balance.toFixed(1));
+const balance = new Number(200);
+console.log(balance);
+// here it specify the object
 
-const otherNumber = 123.8966
+console.log(balance.toString());
+console.log(balance.toFixed (2));
+// detect a Precision value. round it to two decimal places and return it as a string
 
-// console.log(otherNumber.toPrecision(4));
 
-const hundreds = 1000000
-// console.log(hundreds.toLocaleString('en-IN'));
+const numb2 = 38.9756
+console.log(numb2.toPrecision(2));
+// toPrecision() method  helps to control how many important digits you want to keep in a number. generally in case of that it converts the decimal value to its roundfiguere value
 
-// +++++++++++++ Maths +++++++++++++++++++++++++++++
 
-// console.log(Math);
-// console.log(Math.abs(-4));
-// console.log(Math.round(4.6));
-// console.log(Math.ceil(4.2));
-// console.log(Math.floor(4.9));
-// console.log(Math.min(4, 3, 6, 8));
-// console.log(Math.max(4, 3, 6, 8));
+const numb3= 100000
+console.log(numb3.toLocaleString('en-IN '));
+
+
+
+// --------------------------------------   MATHS   ---------------------------------------------------
