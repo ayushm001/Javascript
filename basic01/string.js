@@ -45,5 +45,9 @@ console.log(NewString3.trim());
 //  here it teminates the spaces . and the output is "Ayushman"
 
 const url = "https://ayushman.com/ayushman40%rout"
-
 console.log (url.replace('40%','-') )
+//  replace the mentioned terms 
+console.log(url.includes('rout'));
+//  {.includes} function defines that weather the mention string is avalible or not in URL
+console.log(GameName.split('-')); 
+//  split it into the specific symbol
