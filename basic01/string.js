@@ -26,10 +26,24 @@ console.log(GameName.toUpperCase ())
 // to convert the variables in to uppercase
 
 console.log(GameName.charAt(3) )  
-//  To find the variables data in the given position
+//  To find the charecter at the given index value
 
 console.log(GameName.indexOf ('n'))  
-//  To find the variables positon in the given data
+//  To find the index value of the given charecter
+  
+const NewString = GameName.substring(0,5);
+console.log(NewString);
 
-console.log(GameName [1])  
+const NewString2 = GameName.slice(-3,5);
+console.log(NewString2)
+//  slice - using for limited charecters
 
+const NewString3= "   Ayushman   "
+console.log(NewString3);
+//  here the result will be "   Ayushman   " 
+console.log(NewString3.trim());
+//  here it teminates the spaces . and the output is "Ayushman"
+
+const url = "https://ayushman.com/ayushman40%rout"
+
+console.log (url.replace('40%','-') )
