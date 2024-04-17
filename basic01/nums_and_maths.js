@@ -22,3 +22,18 @@ console.log(numb3.toLocaleString('en-IN '));
 
 
 // --------------------------------------   MATHS   ---------------------------------------------------
+
+console.log(Math);
+console.log(Math.abs(-5));      //'.abs' function only converts the negative value into posetive 
+console.log(Math.round(5.6));
+console.log(Math.ceil(5.2));    //.ceil function defines te maximum decimal value
+console.log(Math.floor(5.2));   // .floor function used for minimum decimal value
+console.log(Math.min(25, 23, 12,40));  
+console.log(Math.max(25, 23, 12,40));   
+console.log(Math.sqrt(16));
+
+
+// console.log(Math.random());
+// console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random()*10);
