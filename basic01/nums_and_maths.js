@@ -23,6 +23,7 @@ console.log(numb3.toLocaleString('en-IN '));
 
 // --------------------------------------   MATHS   ---------------------------------------------------
 
+
 console.log(Math);
 console.log(Math.abs(-5));      //'.abs' function only converts the negative value into posetive 
 console.log(Math.round(5.6));
@@ -35,5 +36,11 @@ console.log(Math.sqrt(16));
 
 // console.log(Math.random());
 // console.log(Math.random());
-console.log(Math.random());
-console.log(Math.random()*10);
+console.log(Math.random());      //.random function deffines a value that flactuate between 0 to 1 in deciaml values
+console.log(Math.floor(Math.random()*10)+1);     
+
+
+const min= 10
+const max= 20
+
+console.log(Math.floor(Math.random()*(min+max+1))+min);
