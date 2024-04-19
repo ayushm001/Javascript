@@ -15,4 +15,14 @@ console.log(NewArray1[0]);
 
 
 // Array Methods :-
+myArray.push(8);          // 'push'method use to put the value in the Array
+myArray.push(3);         
+myArray.pop();          // 'pop' use to pull the last index value in the Array
 
+console.log(myArray.includes(2));   //.includes define whether the value is exiast in the array or not
+console.log(myArray.indexOf (2));   // Define the index value 
+
+
+
+console.log( myArray);
+ 
