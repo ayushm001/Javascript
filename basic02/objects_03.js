@@ -15,9 +15,23 @@ const JsUser = {
 
 JsUser.location = "Istanbul"   //To overwrite and modify the data
 console.log(JsUser.location)
-Object.freeze(JsUser)          //it freeze  the value , we can't update it 
+// Object.freeze(JsUser)          //it freeze  the value , we can't update it 
 JsUser.location = "Ladakh"
 console.log(JsUser)
+
+JsUser.greeting = function(){
+    console.log("Hello Js User");
+}
+console.log(JsUser.greeting());
+console.log(JsUser.greeting);
+
+JsUser.greeting2 = function(){
+    console.log(`Hello Js User , ${this.name}`);     // For reference purpose 
+}
+console.log(JsUser.greeting2());
+console.log(JsUser.greeting2);
+
+
 
 // SYMBOL- Unique datatypes
 
