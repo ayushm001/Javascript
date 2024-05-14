@@ -1,28 +1,33 @@
-// singleton
-// Object.create
+const AppUser = new Object()
 
-// object literals
+// const AppUser2= {}
+//console.log( AppUser);
+// console.log( AppUser2);
 
-const mySym = Symbol("key1")
+AppUser.name = "Ayushman"
+AppUser.Id = "1a"
+AppUser.Location = "BBSR"
+AppUser.isLoggedin = true
 
+// console.log(AppUser);
 
-const JsUser = {
-    name: "Ayushman",
-    "full name": "ROUT AYUSHMAN ",
-    [mySym]: "mykey1",
-    age: 18,
-    location: "Istanbull",
-    email: "man@google.com",
-    isLoggedIn: false,
-    lastLoginDays: ["Monday", "Saturday"]
+const RegularUser = {
+    email : "ayushman@gmail.com",
+    fullName : {
+        first_name : "Ayushman",
+        Last_name : "Rout"
+    }
 }
+// console.log(RegularUser.email);
+// console.log(RegularUser.fullName.Last_name);
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+const obj1 = {Id :"01", name: "Ayushman"}
+const obj2 = {Id :"02", name: "Sameeksha"}
+const obj3 = {Id :"03", name: "Bharghav"}
 
-JsUser.email = "man@google.com"
-// Object.freeze(JsUser)
-JsUser.email = "man@microsoft.com"
-// console.log(JsUser);
+// const obj4  = {obj1, obj2}
+// console.log(obj4);
+
+// const obj4 = object.assign({},obj1, obj2, obj3);
+// console.log(obj4);
+console.log(obj1);
