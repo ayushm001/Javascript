@@ -29,5 +29,5 @@ const obj3 = {Id :"03", name: "Bharghav"}
 // console.log(obj4);
 
 // const obj4 = object.assign({},obj1, obj2, obj3);
-// console.log(obj4);
-console.log(obj1);
+const obj4 = {...obj1, ...obj2}
+console.log(obj4);
