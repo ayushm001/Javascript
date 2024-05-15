@@ -31,3 +31,13 @@ const obj3 = {Id :"03", name: "Bharghav"}
 // const obj4 = object.assign({},obj1, obj2, obj3);
 const obj4 = {...obj1, ...obj2}
 console.log(obj4);
+users[1].email
+// console.log(tinderUser);
+
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
