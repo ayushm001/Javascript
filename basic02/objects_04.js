@@ -33,6 +33,26 @@ const obj4 = {...obj1, ...obj2}
 console.log(obj4);
 users[1].email
 // console.log(tinderUser);
+/ course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
+
+
 
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
