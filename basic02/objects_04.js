@@ -18,9 +18,9 @@ const RegularUser = {
         Last_name : "Rout"
     }
 }
-// console.log(RegularUser.email);
-//console.log(RegularUser.fullName.Last_name);
-//console.log(RegularUser.fullName?.Last_name);   // Here the symboll "?" provides extra protection.  
+console.log(RegularUser.email);
+console.log(RegularUser.fullName.Last_name);
+console.log(RegularUser.fullName?.Last_name);   // Here the symboll "?" provides extra protection.  
  
 
  const obj1 = {1: "A", 2: "B"}
@@ -28,8 +28,8 @@ const RegularUser = {
  const obj3 = {5: "V", 6: "K"}
 
 
-// const obj4 = {obj1, obj2}
-// const obj4= Object.assign ({}, obj1, obj2)        // Here {}- plays the Target role , and the rest of objects plays Source role
+//const obj4 = {obj1, obj2}
+//const obj4= Object.assign ({}, obj1, obj2)        // Here {}- plays the Target role , and the rest of objects plays Source role
 const obj4 = {...obj1, ...obj2, ...obj3}     // Use of spread operator  (...obj)
 //console.log(obj4);
 
@@ -56,9 +56,9 @@ const users = [
 // console.log(users[1].Name);
 // console.log(AppUser);
 
-// console.log(Object.keys(AppUser));   //here it puts the datatypes into the Array. that wll help up to apply loops and conditions
+console.log(Object.keys(AppUser));   //here it puts the datatypes into the Array. that wll help up to apply loops and conditions
 
-// console.log(AppUser.hasOwnProperty('name'));  //This methods provide to check weather the property is availible or not???
+console.log(AppUser.hasOwnProperty('name'));  //This methods provide to check weather the property is availible or not???
 
 
 //-----------------------  OBJECT DESTRUCTURING ---------------------------------------------------------------------------------------------------------------
