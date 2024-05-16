@@ -28,5 +28,6 @@ const RegularUser = {
  const obj3 = {5: "V", 6: "K"}
 
 
-const obj4 = {...obj1, ... obj2}
+// const obj4 = {obj1, obj2}
+const obj4= Object.assign({}, obj1, obj2)        // Here {}- plays the Target role , and the rest of objects plays Source role
 console.log(obj4);
