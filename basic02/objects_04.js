@@ -53,9 +53,26 @@ const users = [
     }
 ]
 
-console.log(users[1].Name);
-console.log(AppUser);
+// console.log(users[1].Name);
+// console.log(AppUser);
 
-console.log(Object.keys(AppUser));   //here it puts the datatypes into the Array. that wll help up to apply loops and conditions
+// console.log(Object.keys(AppUser));   //here it puts the datatypes into the Array. that wll help up to apply loops and conditions
 
-console.log(AppUser.hasOwnProperty('name'));  //This methods provide to check weather the property is availible or not???
+// console.log(AppUser.hasOwnProperty('name'));  //This methods provide to check weather the property is availible or not???
+
+
+//-----------------------  OBJECT DESTRUCTURING ---------------------------------------------------------------------------------------------------------------
+ 
+const  Comics = {
+    Name : "X-men Origins", 
+    price : "200",
+    Published : "MARVEL"
+}
+
+// console.log(Comics.price);
+
+const {price} = Comics
+const {price : x}  = Comics     // Here we destructure the object (price --> x)
+
+console.log (x);
+
