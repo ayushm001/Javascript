@@ -29,5 +29,33 @@ const RegularUser = {
 
 
 // const obj4 = {obj1, obj2}
-const obj4= Object.assign({}, obj1, obj2)        // Here {}- plays the Target role , and the rest of objects plays Source role
-console.log(obj4);
+// const obj4= Object.assign ({}, obj1, obj2)        // Here {}- plays the Target role , and the rest of objects plays Source role
+const obj4 = {...obj1, ...obj2, ...obj3}     // Use of spread operator  (...obj)
+//console.log(obj4);
+
+const users = [
+    {
+        Id : "01-A",
+        Name : "Ayushman", 
+        email : "dfeft@gmail.com"
+    },
+
+    {
+        Id : "03-A",
+        Name : "Bharghav", 
+        email : "enofno@gmail.com"
+    }, 
+
+    {
+        Id : "07-A",
+        Name : "Asish", 
+        email : "xyz@gmail.com"
+    }
+]
+
+console.log(users[1].Name);
+console.log(AppUser);
+
+console.log(Object.keys(AppUser));   //here it puts the datatypes into the Array. that wll help up to apply loops and conditions
+
+console.log(AppUser.hasOwnProperty('name'));  //This methods provide to check weather the property is availible or not???
