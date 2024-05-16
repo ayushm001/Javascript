@@ -71,8 +71,7 @@ const  Comics = {
 
 // console.log(Comics.price);
 
-const {price} = Comics
-const {price : x}  = Comics     // Here we destructure the object (price --> x)
+const {Name} = Comics
+const {Name : x}  = Comics     // Here we destructure the object (price --> x)
 
 console.log (x);
-
