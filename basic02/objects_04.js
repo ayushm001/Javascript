@@ -75,3 +75,14 @@ const {Name} = Comics
 const {Name : x}  = Comics     // Here we destructure the object (price --> x)
 
 console.log (x);
+
+
+
+// ---------------------------------- JSON --------------------------------------------
+
+{
+    "Name" : "Ayushman",
+    "Id" : "11A21"
+    "Address" : "bbsr"
+}
+//  in JSON , there is no need to identify the obect. 
