@@ -45,9 +45,21 @@ console.log("Results  :", RESULTS);   // here the result wil be print as "Result
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- function Loggin_user_message (user_name){
+function Loggin_user_message (user_name){
     return`${user_name} just logged in ` 
  }
 
- Loggin_user_message("Ayushan")
- console.log(Loggin_user_message);
+ Loggin_user_message("Ayushman")
+// console.log( Loggin_user_message("Ayushman"))
+
+//  -------------------> (if , else statment) 
+
+function Logged_in (username) {
+    if (undefined) {
+        console.log("please enter a username ");
+        return 0
+    }
+    return`${username} just logged in `   
+}
+Logged_in ("Ayushman000")
+console.log(Logged_in ());
