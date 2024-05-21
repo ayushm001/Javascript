@@ -38,7 +38,7 @@ function addTWO_numbers (Number_1, Number_2) {
 // THE REASON BEHIND THE UNREACHBLE CCODE IS :--> statement, the code in the function after the return statement will not be executed. This is because the return statement immediately exits the function, returning the specified value and terminating the function's execution.
 
 const RESULTS = addTWO_numbers (2, 3)
-console.log("Results  :", RESULTS);   // here the result wil be print as "Results  : 5". the reason behind is we use " return Number_1 + Number_2 "
+//console.log("Results  :", RESULTS);   // here the result wil be print as "Results  : 5". the reason behind is we use " return Number_1 + Number_2 "
 
 // WE NEED TO UNDERSTAND THAT CONSOLE AND RETURN ARE COMPLETLY 2 DIFFERENT THINGS
 
@@ -63,3 +63,35 @@ function Logged_in (username) {
 }
 Logged_in ("Ayushman000")
 console.log(Logged_in ());
+
+// -------------------------------------------------------------------------------------------------
+
+function Loggin_user_message (user_name){
+    return`${user_name} just logged in ` 
+ }
+
+ Loggin_user_message("Ayushman")
+// console.log( Loggin_user_message())
+
+//  -------------------> (if statment) 
+
+function loggin_user_name (username) {
+    if(username === undefined) {
+        console.log("Please enter a user name ");
+        return
+    }
+    return`${username } just logged  in `
+}
+// console.log(loggin_user_name("ayush"))
+
+// ---------------> (OTHERWISE IN PROFFESIONAL WAY)
+
+function Logged_in_USER (username= "vinod") {
+    if(!username) {
+        console.log("Please Enter a username  ");
+        return
+    }
+    return `${username} just logged in `
+}
+console.log(Logged_in_USER("ayushmann"));
+console.log(Logged_in_USER());          // inn here if we didn't take aany value then it will be print as By default "vinod". thhe reasion is in we take "function Logged_in_USER (username= "vinod")"
