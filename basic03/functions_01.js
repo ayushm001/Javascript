@@ -95,3 +95,45 @@ function Logged_in_USER (username= "vinod") {
 }
 console.log(Logged_in_USER("ayushmann"));
 console.log(Logged_in_USER());          // inn here if we didn't take aany value then it will be print as By default "vinod". thhe reasion is in we take "function Logged_in_USER (username= "vinod")"
+
+
+// -----------   (Function with object)  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function calculate_cart_price (value) {
+    return  value
+}
+//console.log(calculate_cart_price(15)); 
+// console.log(calculate_cart_price(15));
+
+
+// console.log(calculate_cart_price(15, 12, 64, 40));
+
+function calculate_cart_price_2 ( ...value) {                    //(...)- is  known as rest operator. where it helps to sotres the spread values(30, 48, 90, 86) into a arrays
+    return  value
+}
+//console.log(calculate_cart_price_2(30, 48, 90, 86))
+
+// ------------- EX2----------->
+function calculate_cart_price_2 ( num1, num2, ...value) {  
+    return  value
+}
+//console.log(calculate_cart_price_2(233, 544, 909, 567))       // Here the  o/p will be "[ 909, 567 ]". the reason behind  it ( num1, num2, ...value) . whhere te 233, 544 will assign in num1 and num2
+
+
+// ------------------------------------------------------->
+
+const user = {
+    user_name : "Akhram",
+    user_ID : 101,
+    address : "bihar"
+}
+function handleobject(UserInfo) {
+    console.log(`User name is ${UserInfo.user_name} ID is ${UserInfo.user_ID} address  is ${UserInfo.address}`)
+}
+
+// handleobject(user)  // to delever the result  
+// ---------------------------------otherwise------>
+handleobject ({
+    user_name : "Ayushman",
+    user_ID : 90
+})
