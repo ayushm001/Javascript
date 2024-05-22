@@ -137,3 +137,15 @@ handleobject ({
     user_name : "Ayushman",
     user_ID : 90
 })
+
+// --------------------------------------  ARRAY  ------------------------------->
+
+const myNewArray = [100, 393, 900, 878, 500]
+
+function returnValue(myNewArray){
+    return myNewArray[2]
+
+}
+console.log(returnValue(myNewArray));
+// ----------------> otherwise 
+console.log(returnValue([2332, 322, 434, 555, 657]));
