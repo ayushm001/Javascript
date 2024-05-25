@@ -36,3 +36,17 @@ function one(){
      two()
 
 }
+
+
+// one()
+
+if (true) {
+    const username = "ayushman"
+    if (username === "ayushman ") {
+        const website = " Flipkart"
+        // console.log(username + website);
+    }
+    // console.log(website);
+}
+
+// console.log(username);
