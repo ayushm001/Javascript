@@ -23,3 +23,16 @@ if (true) {
 }
 
 console.log(a);
+
+function one(){
+    const username = "Ayushman "
+
+    function two(){
+        const website = "youtube"
+        console.log(username);
+    }
+    // console.log(website);
+
+     two()
+
+}
