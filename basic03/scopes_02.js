@@ -22,47 +22,24 @@ if (true) {
     console.log( "Inner :", a);
 }
 
-console.log(a);
+console.log(a); 
 
-function one(){
+// --------------------------------
+function one() {
     const username = "Ayushman "
 
     function two(){
-        const website = "youtube"
-        console.log(username);
+        const website = " Youtube"
+        console.log( username);
+
     }
-    // console.log(website);
+    // console.log (website);
 
-     two()
-
+    two()
+    
 }
+one()
 
-
-// one()
-
-if (true) {
-    const username = "ayushman"
-    if (username === "ayushman ") {
-        const website = " Flipkart"
-        // console.log(username + website);
-    }
-    // console.log(website);
-}
-
-// console.log(username);
-
-// ++++++++++++++++++ interesting ++++++++++++++++++
-
-
-console.log(addone(5))
-
-function addone(num){
-    return num + 1
-}
-
-
-
-addTwo(5)
-const addTwo = function(num){
-    return num + 2
-}
+// -----------------> NOTE
+//  in scope, Child can access the propoties of Parent. but parent can't access the propoties of child
+//  thats why console.log (website)   (9 line) can't run 
