@@ -22,7 +22,7 @@ if (true) {
     console.log( "Inner :", a);
 }
 
-console.log(a); 
+// console.log(a); 
 
 // --------------------------------
 function one() {
@@ -54,4 +54,19 @@ if (true) {
     console.log(firstname);
 }
 
-//  +++++++++++++++++++++++++++++  INTRSESTING ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//  +++++++++++++++++++++++++++++  INTERESTING ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+console.log(addone(2));
+
+function addone(num){
+    return num +1
+}
+
+
+// --------- 2 -->
+
+const addtwo = function(num){
+    return num +2
+}
+console.log(addtwo(4));
+
