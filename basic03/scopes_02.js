@@ -26,7 +26,7 @@ console.log(a);
 
 // --------------------------------
 function one() {
-    const username = "Ayushman "
+    const username = "Aaku "
 
     function two(){
         const website = " Youtube"
@@ -42,4 +42,16 @@ one()
 
 // -----------------> NOTE
 //  in scope, Child can access the propoties of Parent. but parent can't access the propoties of child
-//  thats why console.log (website)   (9 line) can't run 
+//  thats why console.log (website)   (9 line) can't  be execute  
+
+if (true) {
+    const firstname = "Ayushman "
+    if (firstname === "Ayushman "){
+        const Lastname = "Rout"
+        // console.log(firstname);
+        console.log( firstname+ Lastname);
+    }
+    console.log(firstname);
+}
+
+//  +++++++++++++++++++++++++++++  INTRSESTING ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
