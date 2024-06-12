@@ -32,3 +32,31 @@ switch (week) {
 
 
 
+//  ex  --
+
+let month = "dec"
+
+switch (month) {
+    case "jan":
+        console.log(" 01 ");
+        break;
+    case "feb":
+        console.log(" 02 ");
+        break;
+    case "mar":
+        console.log("03");
+        break;
+    case "apr":
+        console.log("04");
+        break;
+    case "may":
+        console.log("05");
+        break;
+    case "jun":
+        console.log("06");
+        break;
+
+    default:
+        console.log("no result found ");
+        break;
+}
