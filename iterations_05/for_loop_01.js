@@ -33,12 +33,54 @@ for (let a = 0 ; a < 10; a++) {
 
 for (let i = 1; i <= 10; i ++) {
     const element = i
-    console.log(`MULTIPLICATION OF ${i} :---`);
+//    console.log(`MULTIPLICATION OF ${i} :---`);
 
     for (let j = 1; j <= 10; j++) {
         const element = j;
         // console.log(i + ' * ' +j + ' = ' + i*j);
-        console.log(`${i}  *  ${j}  = ${i*j}`);        
+        //console.log(`${i}  *  ${j}  = ${i*j}`);        
     }
     
 }
+
+//  array  x   loop
+
+let MyArray= ["komal", "sahil", "arun", "aniksha"]
+
+
+for (let index = 2; index < MyArray.length; index++) {
+    const element = MyArray[index];
+    // console.log(element);
+    
+}
+// console.log(MyArray.length);
+
+
+
+//**********   Break   and  continue ****************
+
+//  break ---
+
+
+for (let d= 1;d <= 20 ; d++) {
+    const element = d;
+    if (d == 8) {
+        // console.log(`found the : ${d}`);
+        break                                       // use to break a prohgram 
+    }
+    // console.log(d);
+}
+
+
+//  continue :---
+
+for (let m = 2; m <= 20; m++) {
+    const element = m;
+    if (m == 3) {
+       // console.log(` value is ${m}`);
+        continue
+    }
+    // console.log(m);
+    
+}
+
