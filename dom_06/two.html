@@ -1,0 +1,40 @@
+<!--Parent - child releation in  DOM-->
+
+<!--to handle parent-child relationships.
+   1.  Selecting Elements
+   2.  Accessing Parent and Child Elements:
+   3.  First and Last Child: Use firstChild and lastChild for the first and last child nodes. 
+                            Use firstElementChild and lastElementChild for the first and last child elements.
+   4.  Creating and Appending Elements:
+   5.  Removing Elements 
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM {parent-child releation }</title>
+</head>
+<body style="background-color: rgb(192, 196, 115); color: rgb(0, 0, 0);">
+    <div class="parent">
+        <div class="day"> Monday</div>
+        <div class="day"> Tuesday</div>
+        <div class="day"> Wednesday</div>
+        <div class="day"> Thursday</div>
+        <div class="day"> Friday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelectorAll('.parent')
+    console.log(parent);
+    console.log(parent.children);
+    // console.log(parent.children[0].innerHTML);
+    parent.children[1].style.color= "red"
+    console.log(parent)
+</script>
+</html>
