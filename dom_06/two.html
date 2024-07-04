@@ -30,11 +30,19 @@
     </div>
 </body>
 <script>
-    const parent = document.querySelectorAll('.parent')
-    console.log(parent);
-    console.log(parent.children);
-    // console.log(parent.children[0].innerHTML);
-    parent.children[1].style.color= "red"
-    console.log(parent)
+    const new_par = document.querySelector('.parent')
+    // console.log(new_par);
+    new_par.children[1].style.color = "green"
+    console.log(new_par); // for selecting index element 
+
+    //  for all elements :
+    const all_new = document.querySelector('.parent')
+    console.log(all_new);
+    all_new.forEach(parent => {
+        const child = all_new.children
+        for (let i = 0; i < child.length; i++) {
+            child[i].style.color = 'green'
+        }
+    });
 </script>
 </html>
