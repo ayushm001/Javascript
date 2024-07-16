@@ -20,7 +20,7 @@ h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 p{
-    color:brown;
+    color:rgb(224, 67, 229);
     font-size: 40px;
     margin-top: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -28,7 +28,7 @@ p{
 }
 
 
-.buttion{
+.button{
     width: 200px;
     height: 200px;
     margin-top: 50px;
