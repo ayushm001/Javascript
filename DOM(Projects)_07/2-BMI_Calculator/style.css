@@ -29,7 +29,7 @@ body{
 .y{
     margin-top: 20px;
 }
-#Weight{
+#KG{
     font-size: 20px;
     margin-left: 20px;
     padding: 10px 10px;
@@ -55,4 +55,15 @@ button:hover{
 
 .result{
     margin-top: 40px;
+    font-weight: 500;
+}
+.sugg{
+    margin-top: 30px;
+    font-weight: 800;
+}
+.guide{
+    margin-top: 40px;
+}
+p{
+    margin-top: 10px;
 }
