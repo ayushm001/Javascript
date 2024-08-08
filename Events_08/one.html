@@ -11,7 +11,7 @@
         <h1>
             Best players
         </h1>
-        <ul class="players">
+        <ul id="players">
             <li><img width="300px" id="Messi" src="https://th.bing.com/th/id/OIP.ilgzO6P8CYqgsTlWZDGuBgHaFj?w=261&h=196&c=7&r=0&o=5&pid=1.7" alt="image" srcset=""></li><br>
             <li><img width="300px" id="Becham" src="https://th.bing.com/th/id/OIP.nTh072kTA7N6sXwuc9X1AQHaEK?w=320&h=183&c=7&r=0&o=5&pid=1.7" alt="" srcset=""></li><br>
             <li><img width="300px" id="Ronaldo" src="https://th.bing.com/th/id/OIP.7mScnXZX6Pt0x9iWtMgmhQHaE8?w=260&h=180&c=7&r=0&o=5&pid=1.7" alt="" srcset=""></li><br>
@@ -46,17 +46,40 @@
     // altkey, ctrlkey, shiftkey, keyCode
 
     document.getElementById('Ronaldo').addEventListener('click', function (e){
-        alert("xyzz") 
+        alert("xyzz")
+
     },false)
     
     // Here the third parameter (FALSE), specifies the event phase during which the event listener should be triggered.
     // true: The event listener is set to the capturing phase. In the capturing phase, the event starts
     //       from the top of the DOM hierarchy and propagates down to the target element
 
-    //  EVENT PROPAGATION :-  Simply suppose we create a buttion that is (parent and child ) when ever
-    //                        we click the chid buttion that will also accept the parent buttion propoties
-    //                        This will also called bubbling 
+    //  EVENT PROPAGATION :-  Event propagation is a mechanism that describes how events flow through the DOM when an event is fired.
 
+    //  EVENT BUUBBLING :-    Moveing from Child to Parent 
+
+    //  EVENT CAPTURING :-    Moveing from Parent  to Child  (how to enable -> turn the third parameter , TRUE)
+
+    //  HOW TO STOP PROPOGATION ?? ->
+
+    document.getElementById('players').addEventListener('click', function(e){
+        alert("you clicked players ")
+  
+     }, false)
+
+     document.getElementById('Neymar').addEventListener('click', function (e){
+        alert("Clicked neymar ")
+        // here we see that 2 alert will declar. to avoid it add -->
+        e.stopPropagation(); 
+    },false)
     
-</script>
+
+    // preventDefault() ->
+
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault()  // here the default accetion that belongs to thhe event will not occure 
+        e.stopPropagation()
+    }, false)
+
+    </script>
 </html>
