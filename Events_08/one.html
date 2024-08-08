@@ -1,61 +1,62 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title> Event </title>
 </head>
-<body style="background-color: #414141; color: aliceblue;">
-    <h2>Amazing image</h2>
+<body style="background-color: dimgrey; color: antiquewhite;">
+    
     <div>
-        <ul id="images">
-            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600&amp;lazy=load" alt="photoshop"></li>
-            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600&amp;lazy=load" alt=""></li>
-            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600&amp;lazy=load" alt=""></li>
-            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600&amp;lazy=load" alt=""></li>
-            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600&amp;lazy=load" alt=""></li>
-            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        <h1>
+            Best players
+        </h1>
+        <ul class="players">
+            <li><img width="300px" id="Messi" src="https://th.bing.com/th/id/OIP.ilgzO6P8CYqgsTlWZDGuBgHaFj?w=261&h=196&c=7&r=0&o=5&pid=1.7" alt="image" srcset=""></li><br>
+            <li><img width="300px" id="Becham" src="https://th.bing.com/th/id/OIP.nTh072kTA7N6sXwuc9X1AQHaEK?w=320&h=183&c=7&r=0&o=5&pid=1.7" alt="" srcset=""></li><br>
+            <li><img width="300px" id="Ronaldo" src="https://th.bing.com/th/id/OIP.7mScnXZX6Pt0x9iWtMgmhQHaE8?w=260&h=180&c=7&r=0&o=5&pid=1.7" alt="" srcset=""></li><br>
+            <li><img width="300px" id="Neymar" src="https://th.bing.com/th/id/OIP.UGTtORpOwperRpvZ2E1iCwHaEK?w=292&h=180&c=7&r=0&o=5&pid=1.7" alt="" srcset=""></li><br>
+            <li><img width="300px" id="Zaltan" src="https://th.bing.com/th/id/OIP.22nDXigtTKGEN_kbsyMjMQHaEK?w=264&h=180&c=7&r=0&o=5&pid=1.7" alt="" srcset=""></li><br>
+            <li><a href="https://www.bing.com/search?q=google.com&form=ANNTH1&refig=9ad07c5ca35f492fb08422685c8e2a85&pc=LCTS" id="google">Google</a></li>
         </ul>
-   </div>
-
+    </div>
+</body>
 <script>
-    // document.getElementById('owl').onclick = function(){
-    //     alert("owl clicked")
-    // }
 
-     // attachEvent()
-    // jQuery - on
+    // Event accessing ways
+    
+    //onclick:
+    document.getElementById('Zaltan').onclick= function(){
+        alert("YOU CLICKED NO 5")
+    }
 
+    //addEventListner:
+    document.getElementById('Becham').addEventListener('click', function (e){
+        alert("xyzz") 
+        console.log(e);
+    })
+
+    //attachEvent  (oldtype used in jQuery)
+
+
+    //  Imp parts for interview :- 
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false)
+    document.getElementById('Ronaldo').addEventListener('click', function (e){
+        alert("xyzz") 
+    },false)
+    
+    // Here the third parameter (FALSE), specifies the event phase during which the event listener should be triggered.
+    // true: The event listener is set to the capturing phase. In the capturing phase, the event starts
+    //       from the top of the DOM hierarchy and propagates down to the target element
 
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("owl clicked");
-    //     e.stopPropagation()
-    // }, false)
+    //  EVENT PROPAGATION :-  Simply suppose we create a buttion that is (parent and child ) when ever
+    //                        we click the chid buttion that will also accept the parent buttion propoties
+    //                        This will also called bubbling 
+
     
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation()
-    //     console.log("google clicked");
-    // }, false)
-   
-    
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') {
-            console.log(e.target.id);
-            let removeIt = e.target.parentNode
-            removeIt.remove()
-        }
-    
-        
-    })
-    
-    //removeIt.parentNode.removeChild(removeIt)
 </script>
-</body></html>
+</html>
