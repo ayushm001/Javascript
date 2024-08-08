@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Event </title>
 </head>
-<body>
-    <h1>Chai aur code</h1>
-    <button id="stop">Stop</button>
+<body style="background-color: dimgrey; color: antiquewhite;">
+    
+    <div>
+        <h1>
+            Best players
+        </h1>
+        <ul id="players">
+            <li><img width="300px" id="Messi" src="https://th.bing.com/th/id/OIP.ilgzO6P8CYqgsTlWZDGuBgHaFj?w=261&h=196&c=7&r=0&o=5&pid=1.7" alt="image" srcset=""></li><br>
+            <li><img width="300px" id="Becham" src="https://th.bing.com/th/id/OIP.nTh072kTA7N6sXwuc9X1AQHaEK?w=320&h=183&c=7&r=0&o=5&pid=1.7" alt="" srcset=""></li><br>
+            <li><img width="300px" id="Ronaldo" src="https://th.bing.com/th/id/OIP.7mScnXZX6Pt0x9iWtMgmhQHaE8?w=260&h=180&c=7&r=0&o=5&pid=1.7" alt="" srcset=""></li><br>
+            <li><img width="300px" id="Neymar" src="https://th.bing.com/th/id/OIP.UGTtORpOwperRpvZ2E1iCwHaEK?w=292&h=180&c=7&r=0&o=5&pid=1.7" alt="" srcset=""></li><br>
+            <li><img width="300px" id="Zaltan" src="https://th.bing.com/th/id/OIP.22nDXigtTKGEN_kbsyMjMQHaEK?w=264&h=180&c=7&r=0&o=5&pid=1.7" alt="" srcset=""></li><br>
+            <li><a href="https://www.bing.com/search?q=google.com&form=ANNTH1&refig=9ad07c5ca35f492fb08422685c8e2a85&pc=LCTS" id="google">Google</a></li>
+        </ul>
+    </div>
 </body>
 <script>
-    const sayHitesh = function(){
-        console.log("Hitesh");
-    }
-    const changeText = function(){
-        document.querySelector('h1').innerHTML = "best JS series"
-    }
+    // let player = document.querySelector('#players')
+    // player.addEventListener('click' , function(e){
+        // console.log(e.target.parentNode)
+        // let vanish = e.target.parentNode // here the target.parentNode refers to <ul> part
+        // vanish.remove() // removing the pic
+        // This part will also  remove the pic when we clicked the google 
+        // this will hapens cause te google is in <li> part as its parent is 
+        // <ul> thats why it remove all <ul>(imgs) parts        
+    // })
 
-    const changeMe = setTimeout(changeText, 2000)
+    // correct form :- 
+    let player = document.querySelector('#players')
+    player.addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            let vanish = e.target.parentNode
 
-    document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
-        console.log("STOPPED")
+            vanish.remove()
+            
+        }
     })
+
+
 </script>
 </html>
