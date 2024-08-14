@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.up{
+    margin-top: 100px;
+    margin-left: 28px;
+    font-size: 18px;
+}
+
+.down{
+    margin-top: 50px;
+    margin-left: 10%;
+
+}
+
