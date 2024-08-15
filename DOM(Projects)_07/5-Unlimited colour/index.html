@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="up">
-        <h1>Start should change the Back-ground colour in every second  !!</h1>
+        <h1>Start to change the Back-ground colour in every second  !!</h1>
     </div>
 
     <div class="down">
@@ -17,9 +17,23 @@
     </div>
 
     <script>
+        const random = function(){
+            const hex ='01233456789ABCDEF';
+            let colour = '#';
 
+            for (let i =  0; i<6; i++){
+                colour += hex[Math.floor(Math.random() * 16)];
+            }
+            return  colour;
+            
+        }
+        const start_colour = function() {
+            document.body.style.backgroundColor = random();
+        };
+        const Stop_colour = function() {};
 
         
+        document.querySelector('#p').addEventListener('click', start_colour)
     </script>
 </body>
 </html>
