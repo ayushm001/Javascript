@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitesh Choudhry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pass">
+        <h3>NAME : Hitesh Choudhry </h3>
+        <h3>FOLLOWERS : </h3>
+        <h4 class="followers"></h4>
+        <img src="https://www.bing.com/images/search?view=detailV2&ccid=Zz0nVELr&id=A68913CCA7EC4D8C22A081103CD04AD1C2ADFE9E&thid=OIP.Zz0nVELryfmBS9strggNFgAAAA&mediaurl=https%3a%2f%2favatars.githubusercontent.com%2fu%2f11613311%3fv%3d4%3fs%3d400&exph=460&expw=460&q=hitesh+choudhary&simid=608049434444579516&FORM=IRPRST&ck=DD9B13F43554818D265C1316896A22D0&selectedIndex=13&itb=0" alt="profile" srcset="vb">
+    </div>
+</body>
+<script>
+    const xhr = new XMLHttpRequest();
+    const url = 'https://api.github.com/users/hiteshchoudhary'
+
+    xhr.open('GET', url);
+    xhr.onreadystatechange =  function() {
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(xhr.responseText);
+            document.querySelector('.followers').textContent = data.followers;
+            document.querySelector('.profile-img').src = data.avatar_url;
+        }
+    };
+
+    xhr,send();
+
+
+</script>
+</html>
