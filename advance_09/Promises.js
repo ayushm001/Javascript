@@ -59,3 +59,98 @@ const promise_3 = new Promise(function(resolve, rejection){
 promise_3.then(function(user){
     console.log(user);
 })
+
+
+
+const promis_4 = new Promise(function (resolve, rejection){
+    setTimeout(()=>{
+        let error = false;
+        if(!error){
+            resolve({User_name: "PERSON 1", password : 123 })
+        }
+        else{
+            rejection('ERROR : something went wrong ')
+        }
+    }, 2000)
+})
+promis_4.then((user)=>{
+    console.log(user);
+    return user.User_name; // logs the entire user obj
+    // this will not return te user name cause .then consoles the whole user object but the return user.user_name is not capture
+   //  to display the user_name we need to chain up another .then method to handle it . hhere ids how:-
+
+})
+.then((name)=>{
+    console.log(name); // logs the only user_name
+})
+.catch((error)=>{
+    console.log(error);
+})
+.finally(()=>{     // .finally helps to execute piece of code regardless of wether it is fullfield or rejected
+    console.log("The promise is either resolved or rejected");  
+} )
+
+
+
+
+// Handeling with async and await :
+
+
+const Promise_5 = new Promise( (resolve, reject ) =>{
+
+    setTimeout(()=>{
+        let error = false;
+        if(!error){
+            resolve({user_id: '2022', name: "alex"})
+        } 
+        else{
+            reject('ERROR: something went wrong')
+        }
+    }, 3000)
+})
+
+
+async function consumed_promis (){
+   
+    try {
+        const response = await Promise_5
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+consumed_promis()
+
+// NOTE : Here in async we can use await to pause the execution of the function until a promise is resolved or rejected.
+
+//----------------------------------------------------------------------------------
+
+async function all_users (){
+    try {
+        const response = await fetch ("https://api.github.com/users/ayushm001")      
+        const data = await response.json()
+        console.log(data);
+
+      } catch (error) {
+        console.log("E: " , error );  
+      }
+}
+
+all_users()    // useing try and catch methhod
+
+
+//---------------------- othrwise ------------------------------------------------------
+
+ //useing .then ,catchh method
+
+ fetch('https://api.github.com/users/ayushm001')
+ .then((response)=>{
+    return response.json()
+ })
+ .then((data)=>{
+    console.log(data);
+ })
+ .catch((error)=>{
+    console.log(error);
+ })
