@@ -26,9 +26,14 @@ function User(name, login,  id) {
     this.login = login;
     this.id = id;
     
+
+    this.greetinngs = function(){
+        console.log(`welcome ${name}`);
+    }
     return this
  }
  const USER_1 = User("person1", true, 123)
  const USER_2 = User("person2", false, 123)
  const USER_3 = User("person3", true, 123)
  console.log(USER_1);
+ USER_1.greeting()
