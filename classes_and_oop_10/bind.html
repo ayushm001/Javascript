@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> React </title>
+</head>
+<body>
+    <button> click </button>
+</body>
+
+<script>
+
+    /*
+    The bind() method in JavaScript is used to create a new function that, when called, has its this keyword set to the provided value. 
+    This is particularly useful when you want to ensure that a function uses a specific this context, regardless of how it is called.
+    */
+
+    class React{
+         constructor(){
+
+            this.library = "REACT"
+            this.server = "http://localhost:5500"
+
+         document
+            .querySelector('button')
+            .addEventListener('click', this.handle_CLICK
+            .bind(this))  // attach to the reference (library and server )
+
+         }
+
+         handle_CLICK(){
+            console.log("Button clicked");
+            console.log(this);
+         }
+    }
+    
+    const xyz = new React()
+
+</script>
+</html>
