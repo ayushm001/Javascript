@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Closure concept </title>
+</head>
+<body>
+    
+    <button id="yellow"> yellow </button>
+    <button id="red"> red </button>
+    <button id="blue">blue </button>
+    <button id="violet"> violet </button>
+</body>
+<script>
+  
+    // case 1 - Handle withh one or one situation 
+
+    document.getElementById('yellow').onclick = function (){
+        document.body.style.backgroundColor = `yellow`
+    }
+    document.getElementById('red').onclick = function (){
+        document.body.style.backgroundColor = `red`
+    }
+    document.getElementById('blue').onclick = function (){
+        document.body.style.backgroundColor = `blue`
+    }
+    document.getElementById('violet').onclick = function (){
+        document.body.style.backgroundColor = `violet`
+    }
+
+
+    // Case 2 -  Handle with function 
+
+    // function clickHandler (color){
+    //     document.body.backgroundColor = `${color}`
+    // }
+
+    // document.getElementById('yellow').onclick = clickHandler()
+</script>
+</html>
